@@ -1,0 +1,55 @@
+/*
+Theme Name:   astra child theme
+Description:  Write here a brief description about your child-theme
+Author:       admin
+Author URL:   http://192.168.8.119:8080/ted
+Template:     astra
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  astra-child
+*/
+
+/* Write here your own personal stylesheet */
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+.btn-wrap a {
+  text-decoration: none !important;
+    padding: 5px 15px;
+    width: auto;
+    background: rgba(0,0,0,0.5);
+    color: #fff !important;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.btn-wrap a.active {
+  background: #0073aa;
+}
+.blog-post-main {
+  display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px !important;
+} 
+.blog-post-wrap {
+  padding: 0 15px 15px;
+  position: relative;
+  animation: fadeInAnimation ease 3s;
+}
+.blog-post-wrap .blog-title {
+  position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+.blog-post-wrap .blog-title a {
+  color: #fff;
+  text-decoration: none !important;
+}
